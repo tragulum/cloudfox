@@ -40,9 +40,9 @@ Enumerates compute instances for specified Resource Group`,
 	AzRBACMapCommand = &cobra.Command{
 		Use:     "rbac-map",
 		Aliases: []string{"rbac"},
-		Short:   "Display all role assignemts for all principals",
+		Short:   "Display all role assignments for all principals",
 		Long: `
-Display all role assignemts for all principals`,
+Display all role assignments for all principals`,
 		Run: func(cmd *cobra.Command, args []string) {
 			color.Red("This subcommand is under development! Use at your own risk!")
 			m := azure.RBACMapModule{Scope: utils.AzGetScopeInformation()}
